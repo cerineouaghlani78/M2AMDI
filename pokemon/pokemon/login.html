@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Connection{% endblock %}
+
+{% block bodyId %}LoginPage{% endblock %}
+
+{% block content %}
+
+<form action="" method="post">
+
+{% csrf_token %}
+
+{% if error %}
+
+<p class="error">{{ error }}</p>
+
+{% else %}
+
+<p class="title">Entrez le nom d'utilisateur et le mot de passe</p>
+
+{% endif %}
+
+<p class="normal">
+
+<label for="username">Utilisateur: </label>
+
+<input name="username" id="username" size="32" type="text" value="">
+
+</p>
+
+<p class="normal">
+
+<label for="password">Mot de passe: </label>
+
+<input name="password" id="password" size="30" type="password" value="">
+
+</p>
+
+<p>
+
+<input type="submit" value="connect">
+
+</p>
+
+</form>
+
+{% endblock %}
