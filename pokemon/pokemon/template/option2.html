@@ -5,17 +5,10 @@
 {% block bodyId %}Option2 Page{% endblock %}
 
 {% block content %}
-
-<form action="menu" method="post">
-
-{% csrf_token %}
-
-<p>
-
-<button type="button" class="button" onClick="location.href='option2’">menu</button>
-
-</p>
-
+<form action="{% url 'menu' %}" method="post">
+    {% csrf_token %}
+    <p>
+        <button type="button" class="button" onClick="location.href='option2'">menu</button>
+    </p>
 </form>
-
 {% endblock %}
