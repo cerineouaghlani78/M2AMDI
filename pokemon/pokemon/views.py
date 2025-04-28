@@ -14,3 +14,6 @@ def menu(request):
 
 def logout(request):
     return render(request, 'logout.html')
+
+def pokedex(request):
+    return render(request, 'pokedex.html')

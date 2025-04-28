@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from pokemon import views
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,5 @@ urlpatterns = [
     path('option2', views.option2, name='option2'),
     path('menu', views.menu, name='menu'),
     path('logout', views.logout, name='logout'),
+    path('pokedex', views.pokedex, name='pokedex'),
 ]
