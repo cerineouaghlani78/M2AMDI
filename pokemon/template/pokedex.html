@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
 <link
 rel="icon"
 type="image/gif/jpg"
@@ -9,7 +15,6 @@ rel="stylesheet"/>
 <link rel="stylesheet" href="static/css/pokedex.css" />
 </head>
 
-<body>
 <div class="logo">
 <img
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
@@ -190,6 +195,9 @@ rel="stylesheet"/>
     <div id="id-screen" class="right-panel-screen">#1</div>
   </div>
 </div>
+</div>
+<div class="logout-container">
+  <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
 </div>
 <script src="static/js/pokedex.js"></script>
 </body>
