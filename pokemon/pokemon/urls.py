@@ -21,7 +21,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login, name='login'),
+    path('', views.pokedex, name='pokedex'),
     path('login', views.login, name='login'),
     path('option1', views.option1, name='option1'),
     path('option2', views.option2, name='option2'),
