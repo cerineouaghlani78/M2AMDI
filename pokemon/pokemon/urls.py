@@ -21,11 +21,11 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.pokedex, name='pokedex'),
-    path('login', views.login, name='login'),
+    path('', views.pokedex_view, name='pokedex'),
+    path('login', views.login_view, name='login'),
     path('option1', views.option1, name='option1'),
     path('option2', views.option2, name='option2'),
     path('menu', views.menu, name='menu'),
-    path('logout', views.logout, name='logout'),
-    path('pokedex', views.pokedex, name='pokedex'),
+    path('logout', views.logout_view, name='logout'),
+    path('pokedex', views.pokedex_view, name='pokedex'),
 ]
