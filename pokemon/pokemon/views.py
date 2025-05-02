@@ -14,7 +14,6 @@ def login_view(request):
             return render(request, 'login.html', {'error': 'Invalid username or password'})
     return render(request, 'login.html')
 
-
 def option1(request):
     return render(request, 'option1.html')
 
@@ -26,7 +25,7 @@ def menu(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('login.html')
 
 @login_required
 def pokedex_view(request):

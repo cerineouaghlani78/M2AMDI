@@ -656,6 +656,29 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  /* Ajoutez ces styles à votre fichier pokedex.css */
+
+.logout-container {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.logout-btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
   .codepen {
     background-image: url(https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png);
   }
